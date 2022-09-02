@@ -7,6 +7,8 @@ export const environment = {
   production: false,
   Path: "asdasd",
   OS1: "asdasdas",
+  Test: "asd",
+  Test1: "test"
 };
 
 /*

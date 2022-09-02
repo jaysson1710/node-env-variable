@@ -9,4 +9,6 @@ import { environment } from 'src/environments/environment';
 export class AppComponent {
   title = environment.Path;
   title2 = environment.OS1;
+  title3 = environment.Test;
+  title4 = environment.Test1;
 }

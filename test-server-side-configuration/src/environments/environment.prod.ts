@@ -21,4 +21,6 @@ export const environment = {
   production: true,
   Path: process.env["Path"],
   OS1: process.env["OS1"],
+  Test: process.env["Test"],
+  Test1: process.env["Test1"],
 };
