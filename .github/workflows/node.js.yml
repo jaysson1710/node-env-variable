@@ -32,8 +32,8 @@ jobs:
       with:
          # Additional arguments to the sonar-scanner
          args: >
-           -Dsonar.projectKey=dev_test_github
-           -Dsonar.projectName=dev_test_github
+           -Dsonar.projectKey=dev_test_githug-angular
+           -Dsonar.projectName=dev_test_github-angular
            -Dsonar.exclusions=**/bin/**,**.json,**/obj/*,**.xml,**/testresult/**
          projectBaseDir: ./test3-env
       env:
