@@ -38,6 +38,7 @@ jobs:
       with:
         node-version: 14.x
         cache: npm
+        cache-dependency-path: test3-env/package-lock.json
       
     - run: npm ci
       working-directory: ./test3-env
