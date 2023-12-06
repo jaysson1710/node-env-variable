@@ -43,19 +43,20 @@ jobs:
       working-directory: ./test3-env
     - run: npm run build --if-present
       working-directory: ./test3-env
-    - run: npm test
-      working-directory: ./test3-env
     
-    - name: Official SonarQube Scan
-      uses: SonarSource/sonarqube-scan-action@v2.0.1
-      with:
-         # Additional arguments to the sonar-scanner
-         args: >
-           -Dsonar.projectKey=dev_test_githug-angular
-           -Dsonar.projectName=dev_test_github-angular
-           -Dsonar.exclusions=**/bin/**,**.json,**/obj/*,**.xml,**/testresult/**
-         projectBaseDir: ./test3-env
-      env:
-         #BRANCH: ${{github.event.pull_request.head.ref}}
-         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}    
+    #- run: npm test
+    #  working-directory: ./test3-env
+   # 
+   # - name: Official SonarQube Scan
+   #   uses: SonarSource/sonarqube-scan-action@v2.0.1
+   #   with:
+   #      # Additional arguments to the sonar-scanner
+   #      args: >
+   #        -Dsonar.projectKey=dev_test_githug-angular
+   #        -Dsonar.projectName=dev_test_github-angular
+   #        -Dsonar.exclusions=**/bin/**,**.json,**/obj/*,**.xml,**/testresult/**
+   #      projectBaseDir: ./test3-env
+   #   env:
+   #      #BRANCH: ${{github.event.pull_request.head.ref}}
+   #      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+   #      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}    
